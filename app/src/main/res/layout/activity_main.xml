@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal"
+    android:background="@drawable/yes"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/input_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:textAlignment="center"
+            >
+
+            <TextView
+                android:id="@+id/tulisan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Calculator Ilmiah Lucu"
+                android:textAlignment="center"
+                android:textSize="35dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="    #FF008000"
+                android:textStyle="bold"
+                android:layout_marginTop="40dp"
+                android:background="#fff"
+                >
+            </TextView>
+
+            <EditText
+                android:id="@+id/angka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Angka"
+                android:layout_below="@+id/tulisan"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:layout_marginTop="20dp"
+                android:textSize="25dp"
+                android:textAlignment="center"
+
+                >
+            </EditText>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            >
+
+            <Button
+                android:id="@+id/sin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="SIN"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="#E0FFFF"
+                />
+
+            <Button
+                android:id="@+id/cos"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/sin"
+                android:layout_height="wrap_content"
+                android:hint="COS"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="#E0FFFF"
+                />
+
+            <Button
+                android:id="@+id/tan"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/cos"
+                android:layout_height="wrap_content"
+                android:hint="TAN"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="#E0FFFF"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/csc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="CSC"
+                android:layout_marginLeft="50dp"
+                android:background="#E0FFFF"
+                android:layout_marginBottom="20dp"
+                />
+
+            <Button
+                android:id="@+id/sec"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/csc"
+                android:layout_height="wrap_content"
+                android:hint="SEC"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="12dp"
+                android:background="#E0FFFF"
+                />
+            <Button
+                android:id="@+id/cot"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/sec"
+                android:layout_height="wrap_content"
+                android:hint="COT"
+                android:background="#E0FFFF"
+                />
+            <Button
+                android:id="@+id/log"
+                android:layout_width="match_parent"
+                android:layout_below="@id/csc"
+                android:layout_height="wrap_content"
+                android:hint="LOGARITMA"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="#FFC0CB"
+                />
+            <TextView
+                android:id="@+id/hasil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0.0"
+                android:textAlignment="center"
+                android:textSize="35dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#FF00FF00"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:background="#fff"
+                android:layout_below="@+id/log"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
